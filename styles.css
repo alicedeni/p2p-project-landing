@@ -264,6 +264,33 @@ a:hover {
   font-size: 16px;
 }
 
+/* Cards  */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
 /* Screens */
 .screen-duo {
   display: grid;
@@ -461,6 +488,7 @@ a:hover {
 
 @media (max-width: 860px) {
   .hero-grid,
+  .card-grid,
   .screen-duo,
   .features,
   .steps,
